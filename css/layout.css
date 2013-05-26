@@ -6,6 +6,7 @@ body{
 .radius{
 	border-radius: 5px;
 	background-color: #323232;
+	opacity: 1;
 }
 
 h1{

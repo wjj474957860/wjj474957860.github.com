@@ -1,0 +1,105 @@
+body {
+	background-image:url(../img/bg.jpg);
+	font-size: 100%;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: auto;
+	height: auto;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+#header {
+	width: 100%;
+	position: relative;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0!important;
+}
+#header .inside {
+	max-width:62.5em;
+	margin: 0 auto;
+	position: relative;
+}
+#teamInfo {
+	right: 2.5%;
+	position: absolute;
+	top: 50%;
+	margin-left:1.5em;
+}
+#teamInfo li {
+	margin: 0 0 0 2em;
+	display: inline-block;
+	padding: 0;
+}
+#homeBanner {
+	background-image:url(../image/home.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #132b2b;
+	background-position: center top;
+	height:600px;
+}
+#bannerText {
+	text-align:center;
+	width:100%;
+	top:490px;
+	position:absolute;
+}
+#Text {
+	font-size: 1em;
+	margin: 0 auto 0;
+	clear: both;
+	color: #555555;
+	text-align: center;
+	font-family: "Droid Serif", "Georgia", serif;
+	width: 95%;
+	text-transform: uppercase;
+	margin-top:40px;
+}
+#center {
+	margin-top:10px;
+	margin-bottom:30px;
+	max-width: 52.5em;
+	margin: 0 auto 0;
+	padding: 0px 0 0;
+}
+.lineOne {
+	padding:20px;
+	float:left;
+}
+.lineTwo {
+	padding:20px;
+	float:right;
+}
+.lineThree {
+	padding:10px;
+	float:inherit;
+}
+#footer {
+	background: #1b1b1b;
+	color: #5b5b5a;
+	width:100%;
+	margin: 0 auto;
+	margin-top:10px;
+	height:auto;
+}
+#footer .inside {
+	max-width: 62.5em;
+	margin: 0 auto 0;
+	padding: 0px 0 0;
+}
+#footer_left .title {
+	line-height: 1.1em;
+	font-size: 13px !important;
+	margin-bottom: 2px;
+}
+#footer_left {
+	float:left;
+	margin-top:10px;
+}
+.pictures {
+	margin-top:20px;
+}
