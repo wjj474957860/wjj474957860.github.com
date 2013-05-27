@@ -1,5 +1,5 @@
 body {
-	background-image:url(../img/bg.jpg);
+	background-image:url(../images/bg.jpg);
 	font-size: 100%;
 	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: auto;
@@ -35,7 +35,7 @@ body {
 	padding: 0;
 }
 #homeBanner {
-	background-image:url(../image/home.jpg);
+	background-image:url(../images/home.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: #132b2b;
