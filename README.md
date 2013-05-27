@@ -1,8 +1,5 @@
 wjj474957860.github.com
 =======================
 
-Spy's Zone
+Spy's Zone ######created by myself
 ========
-
-created by myself
-=
