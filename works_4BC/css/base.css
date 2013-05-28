@@ -1,0 +1,110 @@
+
+/* 什么是CSS reset ?
+ * HTML 标签在浏览器里有默认的样式，例如 p 标签有
+ * 上下边距，strong 标签有字体加粗样式，em 标签有字体倾斜样式
+ * 不同浏览器的默认样式之间也会有差别，例如 ul 默认带有缩进的样式，
+ * 在 IE 下，它的缩进是通过 margin 实现的，而在 firefox 下，
+ * 它的缩进却是用 padding 实现的。在切换页面的时候，浏览器
+ * 的默认样式往往会给我们带来麻烦，影响开发效率。现在流行的
+ * 解决方法就是一开始就将浏览器的默认样式全部去掉，更确切的说，
+ * 应该通过重新定义标签的样式，“覆盖”掉浏览器提供的默认样式，
+ * 这就是 CSS reset .
+*/
+
+/* CSS reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: ''
+}
+
+abbr, acronym {
+	border: 0;
+}
+
+/* 文字排版 */
+.f12 {
+	font-size: 12px;
+}
+.f13 {
+	font-size: 13px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f16 {
+	font-size: 16px;
+}
+.20 {
+	font-size: 20px;
+}
+.fb {
+	font-weight: bold;
+}
+.fn {
+	font-size: normal;
+}
+.t2 {
+	text-indent: 2em;
+}
+.lh150 {
+	line-height: 150%;
+}
+.lh180 {
+	line-height: 180%;
+}
+.lh2000 {
+	line-height: 200%;
+}
+.unl {
+	text-decoration: underline;
+}
+.no_unl {
+	text-decoration: none;
+}
+
+/* 定位 */
+.tl {
+	text-align: left;
+}
+.tc {
+	text-align: center;
+}
+.tr {
+	text-align: right;
+}
+.bc {
+	margin-left: auto;
+	margin-right: auto;
+}

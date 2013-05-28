@@ -7,10 +7,13 @@ body {
 	padding: 0 0 0 0;
 	margin: 0;
 }
-
+img {
+  border-width: 0px 0px 0px 0px
+}
 #container {
-	width: 100%;
+	width: 100%; /* 因为图片宽度最大为1400px,所以只能设置这么大，可以避免屏幕过大而导致美观问题*/
 	margin: 0 auto;
+	overflow: hidden;
 }
 #header {
 	width: 100%;
@@ -19,20 +22,31 @@ body {
 	margin: 0 0 0 0!important;
 }
 #header .inside {
-	max-width:62.5em;
-	margin: 0 auto;
+	width: 960px;
+	height: 45px;
 	position: relative;
+	top: 30px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #132b2b;
+	margin: 0 auto;
 }
-#teamInfo {
-	right: 2.5%;
-	position: absolute;
-	top: 50%;
-	margin-left:1.5em;
-}
-#teamInfo li {
-	margin: 0 0 0 2em;
-	display: inline-block;
+ul#teamInfo {
 	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+ul#teamInfo li {
+	display: inline;
+}	
+#teamInfo li a{
+	float: left;
+	font-size: 20px;
+	padding: 5px 0 0 20px;
+	color: #132b2b;
+	text-decoration: none;
+
 }
 #homeBanner {
 	background-image:url(../images/home.jpg);
@@ -40,66 +54,81 @@ body {
 	background-attachment: fixed;
 	background-color: #132b2b;
 	background-position: center top;
+	position: relative;
+	margin: 0 auto;
+	top: -3px;
+	left: 0px;
+	width: 1400px;
 	height:600px;
 }
-#bannerText {
-	text-align:center;
-	width:100%;
-	top:490px;
-	position:absolute;
-}
-#Text {
-	font-size: 1em;
-	margin: 0 auto 0;
-	clear: both;
-	color: #555555;
+#homeBanner h2 {
+
 	text-align: center;
-	font-family: "Droid Serif", "Georgia", serif;
-	width: 95%;
-	text-transform: uppercase;
-	margin-top:40px;
+	position: relative;
+	top: 480px;
+	font-size:64px;
 }
+
 #center {
-	margin-top:10px;
-	margin-bottom:30px;
-	max-width: 52.5em;
-	margin: 0 auto 0;
-	padding: 0px 0 0;
+	width: 960px;
+	height: 530px;
+	position: relative;
+	top: 20px;
+	border-top: 2px solid #132b2b;
+	border-bottom: 2px solid #132b2b;
+	margin: 0 auto;
 }
-.lineOne {
+.leftLine {
 	padding:20px;
 	float:left;
+	top: 20px;
+	position: relative;
+	left: 40px;
 }
-.lineTwo {
+.rightLine {
+	position: relative;
+	right: 40px;
+	top: 20px;
 	padding:20px;
 	float:right;
 }
-.lineThree {
-	padding:10px;
-	float:inherit;
-}
 #footer {
+	position: relative;
+	top: 40px;
 	background: #1b1b1b;
 	color: #5b5b5a;
-	width:100%;
+	width: 960px;
+	height: 200px;
+	border: 2px solid #132b2b;
 	margin: 0 auto;
-	margin-top:10px;
-	height:auto;
 }
-#footer .inside {
-	max-width: 62.5em;
-	margin: 0 auto 0;
-	padding: 0px 0 0;
+#footer_left ul {
+	margin: 10px 0 0 30px;
+	padding: 0;
 }
-#footer_left .title {
-	line-height: 1.1em;
-	font-size: 13px !important;
-	margin-bottom: 2px;
+#footer_left ul li {
+	margin-top: 10px;
 }
 #footer_left {
 	float:left;
 	margin-top:10px;
 }
-.pictures {
-	margin-top:20px;
+#footer img {
+	float: right;
+	position: relative;
+	top: 40px;
+	right: 20px;
+}
+.marginTop40 {
+	margin-top:40px;
+}
+#container p {
+	clear: both;
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding-top:10px; 
+	border-top: 1px solid #000;
+	text-align: center;
+	color: #000;
 }
