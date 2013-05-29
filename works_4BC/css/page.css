@@ -1,0 +1,24 @@
+/* 十八大首页样式 */
+.Logo_top {
+	background: url(../images/shadow.gif) no-repeat bottom right;
+	cr;
+	fl;
+	pr;
+}
+.ul_li_a {
+	fl;
+	f20;
+	pt5;
+	pl20;
+	color: #132b2b;
+	text-decoration: none;
+}
+.homebanner {
+	background-image:url(../images/home.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #132b2b;
+	background-position: center top;
+	position: relative;
+	top: -3px;
+}

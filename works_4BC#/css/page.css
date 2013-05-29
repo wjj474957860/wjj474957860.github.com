@@ -1,3 +1,4 @@
+/* 十八大首页样式 */
 body {
 	background-image:url(../images/bg.jpg);
 	font-size: 100%;
@@ -7,46 +8,36 @@ body {
 	padding: 0 0 0 0;
 	margin: 0;
 }
-img {
-  border-width: 0px 0px 0px 0px
-}
 #container {
 	width: 100%; /* 因为图片宽度最大为1400px,所以只能设置这么大，可以避免屏幕过大而导致美观问题*/
-	margin: 0 auto;
 	overflow: hidden;
 }
 #header {
 	width: 100%;
-	position: relative;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0!important;
 }
 #header .inside {
 	width: 960px;
 	height: 45px;
-	position: relative;
 	top: 30px;
-	padding-bottom: 5px;
 	border-bottom: 2px solid #132b2b;
-	margin: 0 auto;
+}
+.logo_top {
+	background:#f1f1f1 url(../images/shadow.gif) no-repeat bottom right;
+	
+}
+.logo_top img {
+	padding: 4px;
+	display: block;
+	margin: -5px 5px 5px -4px;
+	position: relative;
 }
 ul#teamInfo {
-	padding: 0;
-	margin: 0;
-	position: absolute;
 	right: 10px;
 	top: 10px;
 }
-ul#teamInfo li {
-	display: inline;
-}	
-#teamInfo li a{
-	float: left;
-	font-size: 20px;
-	padding: 5px 0 0 20px;
+.ul_li_a {
 	color: #132b2b;
 	text-decoration: none;
-
 }
 #homeBanner {
 	background-image:url(../images/home.jpg);
@@ -55,79 +46,50 @@ ul#teamInfo li {
 	background-color: #132b2b;
 	background-position: center top;
 	position: relative;
-	margin: 0 auto;
-	top: -3px;
-	width: 1400px;
-	height:600px;
+	top: 50px;
 }
 #homeBanner h2 {
-
 	text-align: center;
 	position: relative;
 	top: 480px;
 	font-size:64px;
+	font-weight: bold;
 }
-
 #center {
 	width: 960px;
 	height: 530px;
+	margin: 0 auto;
 	position: relative;
-	top: 20px;
+	top: 70px;
 	border-top: 2px solid #132b2b;
 	border-bottom: 2px solid #132b2b;
-	margin: 0 auto;
-}
-.leftLine {
-	padding:20px;
-	float:left;
-	top: 20px;
-	position: relative;
-	left: 40px;
-}
-.rightLine {
-	position: relative;
-	right: 40px;
-	top: 20px;
-	padding:20px;
-	float:right;
 }
 #footer {
 	position: relative;
-	top: 40px;
+	top: 90px;
 	background: #1b1b1b;
 	color: #5b5b5a;
 	width: 960px;
-	height: 200px;
+	height: 250px;
 	border: 2px solid #132b2b;
 	margin: 0 auto;
 }
-#footer_left ul {
-	margin: 10px 0 0 30px;
-	padding: 0;
-}
-#footer_left ul li {
-	margin-top: 10px;
-}
-#footer_left {
-	float:left;
-	margin-top:10px;
-}
 #footer img {
-	float: right;
-	position: relative;
 	top: 40px;
 	right: 20px;
 }
-.marginTop40 {
-	margin-top:40px;
+#footer ul {
+	margin: 20px;
+}
+#footer ul li{
+	padding: 5px 0;
 }
 #container p {
-	clear: both;
-	position: relative;
 	width: 960px;
-	margin: 0 auto;
-	padding-top:10px; 
 	border-top: 1px solid #000;
 	text-align: center;
 	color: #000;
+}
+#container p strong {
+	font-weight: bold;
 }
