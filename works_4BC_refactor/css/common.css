@@ -1,16 +1,16 @@
+/* logo组件 */
 .logo {
 	border: 0;
 	width: 139px;
 	height: 37px;
 }
-.ul_li {
-	display: inline;
-}
+/* banner组件 */
 .banner {
 	margin: 0 auto;
 	width: 1400px;
 	height:600px;
 }
+/* 中心内容图片组件 */
 .pic {
 	padding: 0;
 	margin: 30px 63px;
