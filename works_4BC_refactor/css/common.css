@@ -3,6 +3,7 @@
 	border: 0;
 	width: 139px;
 	height: 37px;
+	overflow: hidden;
 }
 /* banner组件 */
 .banner {

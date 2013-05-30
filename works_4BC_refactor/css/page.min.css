@@ -1,7 +1,8 @@
 body{background-image:url(../images/bg.jpg);font-size:100%;font-family:"Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;width:auto;height:auto}
-#container{overflow:hidden}#header .inside{width:960px;height:45px;top:30px;border-bottom:2px solid #132b2b}.logo_top{background:#f1f1f1 url(../images/shadow.gif) no-repeat bottom right}
-.logo_top img{padding:4px;display:block;position:relative;margin:-5px 5px 5px -4px}ul#teamInfo{right:10px;top:10px}ul#teamInfo li{display:inline}ul#teamInfo li a{color:#132b2b;text-decoration:none}
-#homeBanner{background-image:url(../images/home.jpg);background-repeat:no-repeat;background-attachment:fixed;background-color:#132b2b;background-position:center top;position:relative;top:50px}
+#container{overflow:hidden}#header .inside{width:960px;height:45px;top:30px;border-bottom:2px solid #132b2b}.logo_top img{position:relative;top:-37px}
+.logo_top img:hover{top:0;background:#132b2b}ul#teamInfo{right:10px;top:10px}ul#teamInfo li{display:inline}ul#teamInfo li a{width:100px;height:20px;line-height:20px;color:#fff;background:url(../images/top_nav.png) no-repeat;background-position:-9px 0;text-decoration:none;text-align:center}
+ul#teamInfo li a:hover{color:#ff0;background-position:-9px -20px}#homeBanner{background-image:url(../images/home.jpg);background-repeat:no-repeat;background-attachment:fixed;background-color:#132b2b;background-position:center top;position:relative;top:50px}
 #homeBanner h2{text-align:center;position:relative;top:480px;font-size:64px;font-weight:bold}#center{width:960px;height:530px;margin:0 auto;position:relative;top:70px;border-top:2px solid #132b2b;border-bottom:2px solid #132b2b}
-#footer{top:90px;background:#1b1b1b;color:#5b5b5a;width:960px;height:250px;border:2px solid #132b2b}#footer img{top:40px;right:20px}#footer ul{margin:20px}
-#footer ul li{padding:5px 0}#container p{width:960px;border-top:1px solid #000;text-align:center;color:#000}#container p strong{font-weight:bold}
+#footer{top:90px;background:#1b1b1b;color:#5b5b5a;width:960px;height:250px;border:2px solid #132b2b}#footer a{top:40px;right:20px}#footer img{position:relative;top:-37px}
+#footer img:hover{top:0;background:#132b2b}#footer ul{margin:20px}#footer ul li{padding:5px 0}#container p{width:960px;border-top:1px solid #000;text-align:center;color:#000}
+#container p strong{font-weight:bold}

@@ -22,15 +22,18 @@ body {
 }
 /* logo添加阴影底图 */
 .logo_top {
-	background:#f1f1f1 url(../images/shadow.gif) no-repeat bottom right;
-	
+	/* background:#f1f1f1 url(../images/shadow.gif) no-repeat bottom right; */
 }
 /* 让图片左上偏移，更有立体效果 */
 .logo_top img {
-	padding: 4px;
-	display: block;
 	position: relative;
-	margin: -5px 5px 5px -4px;
+	top: -37px;
+}
+
+/*s鼠标经过的样式*/
+.logo_top img:hover {
+	top: 0px;
+	background: #132b2b;
 }
 
 /* 右侧联系信息 */
@@ -42,12 +45,24 @@ ul#teamInfo {
 /* 在同一行显示 */
  ul#teamInfo li{
 	display: inline;
+
 }
 
 /*联系信息文字的样式 */
 ul#teamInfo li a {
-	color: #132b2b;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	background: url(../images/top_nav.png) no-repeat;
+	background-position: -9px 0;  
 	text-decoration: none;
+	text-align: center;
+}
+/* 联系信息在鼠标经过的样式 */
+ul#teamInfo li a:hover {
+	color: #ff0;
+	background-position:-9px -20px;
 }
 /* homeBanner部分，加张固定的背景图 */
 #homeBanner {
@@ -88,11 +103,20 @@ ul#teamInfo li a {
 	border: 2px solid #132b2b;
 }
 /* 底部logo */
-#footer img {
+#footer a {
 	top: 40px;
 	right: 20px;
 }
+/* 设置logo位置 */
+#footer img {
+	position: relative;
+	top: -37px;
+}
 
+#footer img:hover {
+	top: 0px;
+	background: #132b2b;
+}
 /* footer下ul样式 */
 #footer ul {
 	margin: 20px;
@@ -107,6 +131,8 @@ ul#teamInfo li a {
 	text-align: center;
 	color: #000;
 }
+
+/* 恢复 strong 默认样式 */
 #container p strong {
 	font-weight: bold;
 }
