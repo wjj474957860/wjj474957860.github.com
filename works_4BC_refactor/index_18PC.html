@@ -1,12 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+>选择DOCTYPE 
+这个是健壮文档所必需的，目的是告诉浏览器或者其他用户代理知道你要使用的HTML语言的类型
+在编写HTML时要做的第一件事 From "the zen of CSS desgin" ; 1.1.2 ; P11
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- 
+>指定语言和字符集
+将HTML文档指定为某一种人类的语言。Google和其他搜索引擎会根据搜索请求的语言来过滤搜索结果
+，可以带来搜索引擎带来的流量。
+-->
+<!-- 设置文档的XML语言，这里设置为简体中文的ISO代码zh-cn-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
   <!-- html 部分 -->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <!-- 设置文档的字符集，这里为utf-8-->
+  <!--
+    utf-8是一种Unicode,Unicode则是一种流行的国际性编码方案，所带来的好处就是不同字符集的多种语言，
+    将能够共存在同一张页面中，目前唯一阻碍utf-8在web中广泛使用的就是，一些古老的，没有考虑
+    到国际化需求的服务器软件以及页面开发工具并不支持uft-8.目前各种浏览器在处理utf-8时都没有
+    任何问题，所以在用户端这边并不是问题，问题出现在服务器端。若文档的主要语言是中文，那么
+    指定一个更加明确的字符集可能更好些。
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Spy"/>
+  <meta name="keywords" content="design, css ,十八大, web"/>
+  <meta name="description" content="以十八大为主题的网页设计大赛"/>
+  <!--
+  >
+  >指定标题
+  title的作用就是用来描述页面内容，当访客保存至收藏夹时，内容作为描述同样
+  保存在浏览器中；搜索引擎也对title元素中包含的关键字格外感兴趣，因此可以明显提高
+  页面在搜索引擎中的排名，标题极具描述性地概括该页面的内容。
+  -->
   <title>Creativity by 4 Beginners</title>
+  <!--
   <link rel="stylesheet" type="text/css" href="css/base.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.min.css">
   <link rel="stylesheet" type="text/css" href="css/page.min.css">
+  -->
+  <style type="text/css">
+      @import "css/base.min.css";
+      @import "css/common.min.css";
+      @import "css/page.min.css";
+  </style>
 </head>
   <!-- head部分结束 -->
 
@@ -23,7 +59,7 @@
           <img src="images/logo.png" alt="4 Beginners’ logo" title="4 Beginners" ></a>
         <ul id="teamInfo" class="pa">
           <li>
-           <a class="fl f20" href="#" onclick="Contact()" title="contact">contact</a>
+            <a class="fl f20" href="#" onclick="Contact()" title="contact">contact</a>
           </li>
           <li>
             <a class="fl f20" href="#" onclick="About()" title="about">about</a>
@@ -34,47 +70,47 @@
 
       <!-- 大横幅与标题 -->
       <div id="homeBanner" class="banner">
-        <h2 >创意! 十八大</h2>  <!-- 大标题 --> 
-      </div>
+        <h2 >创意! 十八大</h2>
+        <!-- 大标题 --> </div>
     </div>
 
     <!-- 中间主要内容部分 -->
     <div id="center">
       <div>
         <a href="into_18PC.html">
-          <img  class="pic" src="images/in.bmp" title="走进十八大" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />      
+          <img  class="pic" src="images/in.bmp" title="走进十八大" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />
         </a>
         <a href="wind_of_18PC.html">
-          <img  class="pic" src="images/wind.jpg" title="十八大之风" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />      
+          <img  class="pic" src="images/wind.jpg" title="十八大之风" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />
         </a>
       </div>
       <div>
         <a href="read_18PC.html">
-          <img  class="pic" src="images/book.jpg" title="解读十八大" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />      
+          <img  class="pic" src="images/book.jpg" title="解读十八大" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />
         </a>
-         <a href="me_and_18PC.html">
-          <img  class="pic" src="images/me.jpg" title="十八大与我" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />    
-        </a>  
-        </div>
+        <a href="me_and_18PC.html">
+          <img  class="pic" src="images/me.jpg" title="十八大与我" onmouseover="Highlight(this);" onmouseout="UnHighlight(this);" />
+        </a>
       </div>
+    </div>
 
     <!--footer 部分 -->
     <div id="footer" class="bc pr">
-        <ul class="fl cb footer_left"> <!-- 可扩展的链接列表 -->
-          <li >
-            <a alt="我爱中国" title="我爱中国">我爱中国</a>
-          </li>
-          <li>
-            <a alt="我爱SCNU" title="我爱SCNU">我爱SCNU</a>
-          </li>
-          <li>
-            <a alt="我爱前端" title="我爱计算机">我爱前端</a>
-          </li>
-        </ul>
+      <ul class="fl cb footer_left">
+        <!-- 可扩展的链接列表 -->
+        <li >
+          <a alt="我爱中国" title="我爱中国">我爱中国</a>
+        </li>
+        <li>
+          <a alt="我爱SCNU" title="我爱SCNU">我爱SCNU</a>
+        </li>
+        <li>
+          <a alt="我爱前端" title="我爱计算机">我爱前端</a>
+        </li>
+      </ul>
       <!-- 右侧logo图 -->
       <a class="cb fr pa logo" href="#">
-        <img src="images/logo.png" alt="4 Beginners' logo" title="4 Beginners">
-      </a>
+        <img src="images/logo.png" alt="4 Beginners' logo" title="4 Beginners"></a>
     </div>
 
     <!-- 底部版权栏-->
