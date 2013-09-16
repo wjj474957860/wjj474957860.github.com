@@ -1,36 +1,186 @@
 <!DOCTYPE html>
-<html>
-   	<meta charset="utf-8" />
-	<title>面试腾讯</title>
-	<link rel="stylesheet" type="text/css" href="css/color.css">
-	<link rel="stylesheet" type="text/css" href="css/layout.css">	
-	<body>
-		<h1 class = "radius">第一次面试腾讯</h1>
-		<div class = "radius">
-		<h2>笔 试</h2>
-		<h4>地点: 华南理工大学</h4>
-		<h4>时间: 2013-04-13 10:00 am</h4>
-		<h4>时长：2小时</h4>
-		<p>题型: 1.多选择题；2.填空题；3.代码补充题；4.附加题</p>
-		<p>涉及内容: 内存、栈、堆、指针、数据结构、算法、计算机网络和操作系统等基础知识。</p>
-		<p>
-			场景描述: 总体感觉还是挺多人去的，9点多就到达场地。很多考生都在外面待命，调整自己准备接下来的笔试。
-			而我趁还有时间就去教学楼外面不远的地方，坐在阶梯上，看着带过来的书……要是复习好的，就不用想我这样了。。。
-		</p>
-		<p>笔试情况:有两位监考官，感觉挺relax的，需要带上简历和身份证（或者学生证）。笔试刚开始没过久，就会验证个人身份，并且签名。考试交卷时，简历放在考卷的下面即可。 </p>
-	</div>
-		<h4 class = "radius"><strong>感觉</strong>&nbsp;<strong>又一次高考~</strong></h4>
-		<div class = "radius">
-		<h2>第一轮面试</h2>
-		<h4>地点: 华南理工大学中心酒店</h4>
-		<h4>时间: 2013-04-18 02:00 pm</h4>
-		<h4>时长：半小时</h4>
-		<p>涉及内容: 1.html、css、js、DOM等基础知识；2.js安全性；3.使用jQuery本质是什么？；4.如何找到一个元素？5。智力题：1000苹果放在10个盒子里，客人来买苹果，推给N个盒子即可满足要求。</p>
-		<p>
-			场景描述: 一面很多人，腾讯支持霸面的，至少在一面是支持的。首先去签到，然后就会受到一张写着自己面试房间的房间号。一面只有一个面试官，我的面试官很nice，让人马上放松的感觉。我在面试的过程中，也没有什么紧张的，基本上就是知道什么就说什么，尽量去说好。
-		</p>
-	</div>
-		<a href="demo.html">进入Demo</a>
-		<a href="./works_4BC_refactor/index_18PC.html">进入Demo</a>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>House</title>
+    <meta name="author" content="吴建杰 Spy"/>
+    <meta name="keywords" content="some keywords"/>
+    <meta name="description" content="some description"/>
+    
+    <style type="text/css">
+        section{
+            position: relative;
+            margin: 0 auto;
+            width: 50em;
+            height: 50em;
+            max-width: 95%;
+            min-width: 730px;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 8px #aaa;
+            -webkit-box-shadow: 2px 2px 8px #aaa;
+            -moz-box-shadow: 2px 2px 8px #aaa;
+        }
+        .triangle{
+            margin: 0 auto;
+            display: block;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            border-style: solid;
+            border-color: #474747 transparent transparent #474747;
+        }
+        .rotate45{
+            transform:rotate(45deg);
+            -ms-transform:rotate(45deg); /* IE 9 */
+            -moz-transform:rotate(45deg); /* Firefox */
+            -webkit-transform:rotate(45deg); /* Safari and Chrome */
+            -o-transform:rotate(45deg); /* Opera */
+        }
+        .sunshine{
+            display:table-cell;
+            vertical-align: middle;
+            position: absolute;
+            right: 6.25em;
+            top: 3.125em;
+            width: 6.25em;
+            height: 6.25em;
+            border-radius:6.25em;
+            -moz-border-radius:6.25em;
+            box-shadow: -3px 3px 6px #ede3ca;
+            -webkit-box-shadow: -3px 3px 6px #ede3ca;
+            -moz-box-shadow: -3px 3px 6px #ede3ca;
+            background: -webkit-radial-gradient(#fbad25,#fcbf54,#eae3c9);
+        }
+        .house-roof{
+            position: absolute;
+            bottom: 140px;
+            left: 82px;
+            border-width: 200px;
+        }
+        .house-body{
+            position: absolute;
+            bottom: 0;
+            left: 5em;
+            width: 25em;
+            height: 21.25em;
+            background: #c7c7c7;
+
+        }
+        .house-window{
+            position: relative;
+            float: left;
+            top: 5.625em;
+            width: 5em;
+            height: 5em;
+            border: 5px solid #011b58;
+        }
+        .window-left-top{
+            width: 2.5em;
+            height: 2.375em;
+            border-right: 2px solid #011b58;
+            border-bottom: 2px solid #011b58;
+        }
+        .window-right-bottom{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 2.375em;
+            height: 2.5em;
+            border-top: 2px solid #011b58;
+            border-left: 2px solid #011b58;
+        }
+        .fr{
+            float: right;
+        }
+        .left60{
+            left: 3.75em;
+        }
+        .right60{
+            right: 3.75em;
+        }
+        .door-roof{
+            position: absolute;
+            bottom: 3.75em;
+            left: 50%;
+            margin-left: -1.875em;
+            width: 3.75em;
+            height: 3.75em;
+            background: #5a493f;
+            border-radius:1.875em;
+            -moz-border-radius:1.875em;
+        }
+        .door-body{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.875em;
+            width: 3.75em;
+            height: 5.625em;
+            background: #5a493f;
+        }
+        .tree{
+            position: absolute;
+            bottom: 0;
+            right: 6.25em;
+            width: 13.125em;
+            height: 13.125em;
+        }
+        .tree-leaf{
+            position: relative;
+            top: 84px;;
+            height: 127px;
+        }
+        .tree-leaf-top{
+            border-width: 50px;
+        }
+        .tree-leaf-middle{
+            position: relative;
+            top: -77px;
+            border-width: 40px;
+        }
+        .tree-leaf-bottom{
+            position: relative;
+            top: -133px;
+            border-width: 30px;
+        }
+        .tree-body{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -12.5px;
+            width: 25px;
+            height: 3.125em;
+            background: #5a493f;
+        }
+    </style>
+</head>
+<body>
+   <section>
+       <div class="sunshine"></div>
+       <div class="house-roof triangle rotate45"></div>
+       <div class="house-body">
+           <div class="house-window left60">
+               <div class="window-left-top"></div>
+               <div class="window-right-bottom"></div>
+           </div>
+           <div class="house-window fr right60">
+               <div class="window-left-top"></div>
+               <div class="window-right-bottom"></div>
+           </div>
+           <div class="house-door">
+               <div class="door-roof"></div>
+               <div class="door-body"></div>
+           </div>
+       </div>
+       <div class="tree">
+           <div class="tree-leaf">
+               <div class="tree-leaf-top triangle rotate45"></div>
+               <div class="tree-leaf-middle triangle rotate45"></div>
+               <div class="tree-leaf-bottom triangle rotate45"></div>
+           </div>
+           <div class="tree-body"></div>
+       </div>
+   </section>
+</body>
 </html>
